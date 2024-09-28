@@ -27,30 +27,30 @@ public class ComprobarCorreoCuenta extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lbInicioSesion = new javax.swing.JLabel();
-        btnInicioSesion = new javax.swing.JButton();
+        lbComprobarCorreoCuentaTitle = new javax.swing.JLabel();
+        btnComprobarCorreoCuentaConfirmar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
+        jTextComprobarCorreoCuentaIngresarCorreo = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbInicioSesion.setBackground(new java.awt.Color(0, 0, 0));
-        lbInicioSesion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        lbInicioSesion.setForeground(new java.awt.Color(0, 0, 0));
-        lbInicioSesion.setText("RECUPERAR CUENTA");
-        jPanel1.add(lbInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
+        lbComprobarCorreoCuentaTitle.setBackground(new java.awt.Color(0, 0, 0));
+        lbComprobarCorreoCuentaTitle.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lbComprobarCorreoCuentaTitle.setForeground(new java.awt.Color(0, 0, 0));
+        lbComprobarCorreoCuentaTitle.setText("RECUPERAR CUENTA");
+        jPanel1.add(lbComprobarCorreoCuentaTitle, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
 
-        btnInicioSesion.setBackground(new java.awt.Color(0, 153, 255));
-        btnInicioSesion.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
-        btnInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicioSesion.setText("CONFIRMAR");
-        btnInicioSesion.setBorder(null);
-        jPanel1.add(btnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, 30));
+        btnComprobarCorreoCuentaConfirmar.setBackground(new java.awt.Color(0, 153, 255));
+        btnComprobarCorreoCuentaConfirmar.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
+        btnComprobarCorreoCuentaConfirmar.setForeground(new java.awt.Color(255, 255, 255));
+        btnComprobarCorreoCuentaConfirmar.setText("CONFIRMAR");
+        btnComprobarCorreoCuentaConfirmar.setBorder(null);
+        jPanel1.add(btnComprobarCorreoCuentaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -69,16 +69,16 @@ public class ComprobarCorreoCuenta extends javax.swing.JFrame {
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
         jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 360, 10));
 
-        jTextField7.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setText("Por favor ingrese el correo electronico de la cuenta");
-        jTextField7.setBorder(null);
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextComprobarCorreoCuentaIngresarCorreo.setBackground(new java.awt.Color(204, 204, 204));
+        jTextComprobarCorreoCuentaIngresarCorreo.setForeground(new java.awt.Color(0, 0, 0));
+        jTextComprobarCorreoCuentaIngresarCorreo.setText("Por favor ingrese el correo electronico de la cuenta");
+        jTextComprobarCorreoCuentaIngresarCorreo.setBorder(null);
+        jTextComprobarCorreoCuentaIngresarCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextComprobarCorreoCuentaIngresarCorreoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 360, 30));
+        jPanel1.add(jTextComprobarCorreoCuentaIngresarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 360, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -94,9 +94,9 @@ public class ComprobarCorreoCuenta extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextComprobarCorreoCuentaIngresarCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextComprobarCorreoCuentaIngresarCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTextComprobarCorreoCuentaIngresarCorreoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -141,12 +141,12 @@ public class ComprobarCorreoCuenta extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInicioSesion;
+    public javax.swing.JButton btnComprobarCorreoCuentaConfirmar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator8;
-    public javax.swing.JTextField jTextField7;
-    private javax.swing.JLabel lbInicioSesion;
+    public javax.swing.JTextField jTextComprobarCorreoCuentaIngresarCorreo;
+    public javax.swing.JLabel lbComprobarCorreoCuentaTitle;
     // End of variables declaration//GEN-END:variables
 }
