@@ -27,70 +27,76 @@ public class Registrar extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        lbInicioSesion = new javax.swing.JLabel();
-        btnInicioSesion = new javax.swing.JButton();
-        txtPassword = new javax.swing.JPasswordField();
-        jTextField1 = new javax.swing.JTextField();
+        lbRegistrar = new javax.swing.JLabel();
+        btnRegistrar = new javax.swing.JButton();
+        txtPasswordRegistrar = new javax.swing.JPasswordField();
+        jTextRegistrar1nombre = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField2 = new javax.swing.JTextField();
+        jTextRegistrar2nombre = new javax.swing.JTextField();
         jSeparator4 = new javax.swing.JSeparator();
-        jTextField3 = new javax.swing.JTextField();
+        jTextRegistrar1apellido = new javax.swing.JTextField();
         jSeparator5 = new javax.swing.JSeparator();
-        jTextField4 = new javax.swing.JTextField();
+        jTextRegistrarSexo = new javax.swing.JTextField();
         jSeparator6 = new javax.swing.JSeparator();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jTextField5 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jTextField6 = new javax.swing.JTextField();
-        txtPassword1 = new javax.swing.JPasswordField();
+        jDateRegistrarFechaNacimiento = new com.toedter.calendar.JDateChooser();
+        jTextRegistrar2apellido = new javax.swing.JTextField();
+        jComboBoxRegistrarSexo = new javax.swing.JComboBox<>();
+        jTextRegistrarFechaNacimiento = new javax.swing.JTextField();
+        txtPasswordRegistrarConfirmar = new javax.swing.JPasswordField();
         jSeparator7 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
+        jTextRegistrarCorreo = new javax.swing.JTextField();
+        jCheckBoxRegistrarContraseña2 = new javax.swing.JCheckBox();
+        jCheckBoxRegistrarContraseña1 = new javax.swing.JCheckBox();
+        jTextRegistrarTipodeDocumento = new javax.swing.JTextField();
+        jComboBoxRegistrarTipodeDocumento = new javax.swing.JComboBox<>();
+        jSeparator9 = new javax.swing.JSeparator();
+        jTextRegistrarDigitesuDocumento = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lbInicioSesion.setBackground(new java.awt.Color(0, 0, 0));
-        lbInicioSesion.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
-        lbInicioSesion.setForeground(new java.awt.Color(0, 0, 0));
-        lbInicioSesion.setText("REGISTRO DE USUARIO");
-        jPanel1.add(lbInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 40, -1, -1));
+        lbRegistrar.setBackground(new java.awt.Color(0, 0, 0));
+        lbRegistrar.setFont(new java.awt.Font("Dialog", 0, 18)); // NOI18N
+        lbRegistrar.setForeground(new java.awt.Color(0, 0, 0));
+        lbRegistrar.setText("REGISTRO DE USUARIO");
+        jPanel1.add(lbRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 20, -1, -1));
 
-        btnInicioSesion.setBackground(new java.awt.Color(0, 153, 255));
-        btnInicioSesion.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
-        btnInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicioSesion.setText("REGISTRARSE");
-        btnInicioSesion.setBorder(null);
-        jPanel1.add(btnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 170, 30));
+        btnRegistrar.setBackground(new java.awt.Color(0, 153, 255));
+        btnRegistrar.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrar.setText("REGISTRARSE");
+        btnRegistrar.setBorder(null);
+        jPanel1.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 390, 170, 30));
 
-        txtPassword.setBackground(new java.awt.Color(204, 204, 204));
-        txtPassword.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(0, 0, 0));
-        txtPassword.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtPassword.setText("Contraseña");
-        txtPassword.setBorder(null);
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
+        txtPasswordRegistrar.setBackground(new java.awt.Color(204, 204, 204));
+        txtPasswordRegistrar.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
+        txtPasswordRegistrar.setForeground(new java.awt.Color(0, 0, 0));
+        txtPasswordRegistrar.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPasswordRegistrar.setText("Contraseña");
+        txtPasswordRegistrar.setBorder(null);
+        txtPasswordRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
+                txtPasswordRegistrarActionPerformed(evt);
             }
         });
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 181, 20));
+        jPanel1.add(txtPasswordRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 310, 181, 20));
 
-        jTextField1.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField1.setText("Primer nombre");
-        jTextField1.setBorder(null);
-        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrar1nombre.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrar1nombre.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrar1nombre.setText("Primer nombre");
+        jTextRegistrar1nombre.setBorder(null);
+        jTextRegistrar1nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField1ActionPerformed(evt);
+                jTextRegistrar1nombreActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 80, 160, 30));
+        jPanel1.add(jTextRegistrar1nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 60, 160, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -98,112 +104,156 @@ public class Registrar extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 290, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 470, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 470));
-        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 190, 10));
-        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 110, 130, 10));
+        jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 190, 10));
+        jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 90, 130, 10));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
 
-        jTextField2.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setText("Segundo nombre");
-        jTextField2.setBorder(null);
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrar2nombre.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrar2nombre.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrar2nombre.setText("Segundo nombre");
+        jTextRegistrar2nombre.setBorder(null);
+        jTextRegistrar2nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTextRegistrar2nombreActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 80, 160, 30));
-        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 130, 10));
+        jPanel1.add(jTextRegistrar2nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 60, 160, 30));
+        jPanel1.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 90, 130, 10));
 
-        jTextField3.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setText("Primer apellido");
-        jTextField3.setBorder(null);
-        jTextField3.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrar1apellido.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrar1apellido.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrar1apellido.setText("Primer apellido");
+        jTextRegistrar1apellido.setBorder(null);
+        jTextRegistrar1apellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField3ActionPerformed(evt);
+                jTextRegistrar1apellidoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 120, 160, 30));
-        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 150, 130, 10));
+        jPanel1.add(jTextRegistrar1apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 160, 30));
+        jPanel1.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 130, 130, 10));
 
-        jTextField4.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setText("Sexo");
-        jTextField4.setBorder(null);
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrarSexo.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrarSexo.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrarSexo.setText("Sexo");
+        jTextRegistrarSexo.setBorder(null);
+        jTextRegistrarSexo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jTextRegistrarSexoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, -1, 30));
-        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 150, 130, 10));
+        jPanel1.add(jTextRegistrarSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 210, -1, 30));
+        jPanel1.add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 130, 130, 10));
 
-        jDateChooser1.setBackground(new java.awt.Color(255, 255, 255));
-        jDateChooser1.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel1.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 180, 90, 20));
+        jDateRegistrarFechaNacimiento.setBackground(new java.awt.Color(255, 255, 255));
+        jDateRegistrarFechaNacimiento.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.add(jDateRegistrarFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 220, 90, 20));
 
-        jTextField5.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField5.setText("Segundo apellido");
-        jTextField5.setBorder(null);
-        jTextField5.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrar2apellido.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrar2apellido.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrar2apellido.setText("Segundo apellido");
+        jTextRegistrar2apellido.setBorder(null);
+        jTextRegistrar2apellido.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField5ActionPerformed(evt);
+                jTextRegistrar2apellidoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 120, 160, 30));
+        jPanel1.add(jTextRegistrar2apellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 100, 160, 30));
 
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxRegistrarSexo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jComboBoxRegistrarSexoActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 220, 140, 20));
+        jPanel1.add(jComboBoxRegistrarSexo, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 220, 70, 20));
 
-        jTextField6.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField6.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField6.setText("Fecha de nacimiento");
-        jTextField6.setBorder(null);
-        jTextField6.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrarFechaNacimiento.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrarFechaNacimiento.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrarFechaNacimiento.setText("Fecha de nacimiento");
+        jTextRegistrarFechaNacimiento.setBorder(null);
+        jTextRegistrarFechaNacimiento.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField6ActionPerformed(evt);
+                jTextRegistrarFechaNacimientoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 170, 120, 30));
+        jPanel1.add(jTextRegistrarFechaNacimiento, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 210, 120, 30));
 
-        txtPassword1.setBackground(new java.awt.Color(204, 204, 204));
-        txtPassword1.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
-        txtPassword1.setForeground(new java.awt.Color(0, 0, 0));
-        txtPassword1.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtPassword1.setText("Contraseña");
-        txtPassword1.setBorder(null);
-        txtPassword1.addActionListener(new java.awt.event.ActionListener() {
+        txtPasswordRegistrarConfirmar.setBackground(new java.awt.Color(204, 204, 204));
+        txtPasswordRegistrarConfirmar.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
+        txtPasswordRegistrarConfirmar.setForeground(new java.awt.Color(0, 0, 0));
+        txtPasswordRegistrarConfirmar.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        txtPasswordRegistrarConfirmar.setText("Contraseña");
+        txtPasswordRegistrarConfirmar.setBorder(null);
+        txtPasswordRegistrarConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPassword1ActionPerformed(evt);
+                txtPasswordRegistrarConfirmarActionPerformed(evt);
             }
         });
-        jPanel1.add(txtPassword1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 330, 181, 20));
-        jPanel1.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 350, 190, 10));
-        jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 280, 190, 10));
+        jPanel1.add(txtPasswordRegistrarConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 340, 181, 20));
+        jPanel1.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 190, 10));
+        jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 190, 10));
 
-        jTextField7.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setText("Correo electronico");
-        jTextField7.setBorder(null);
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextRegistrarCorreo.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrarCorreo.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrarCorreo.setText("Correo electronico");
+        jTextRegistrarCorreo.setBorder(null);
+        jTextRegistrarCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextRegistrarCorreoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 250, 160, 30));
+        jPanel1.add(jTextRegistrarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 160, 30));
+
+        jCheckBoxRegistrarContraseña2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxRegistrarContraseña2ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jCheckBoxRegistrarContraseña2, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 340, -1, -1));
+
+        jCheckBoxRegistrarContraseña1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxRegistrarContraseña1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jCheckBoxRegistrarContraseña1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 310, -1, -1));
+
+        jTextRegistrarTipodeDocumento.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrarTipodeDocumento.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrarTipodeDocumento.setText("Tipo de documento");
+        jTextRegistrarTipodeDocumento.setBorder(null);
+        jTextRegistrarTipodeDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextRegistrarTipodeDocumentoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextRegistrarTipodeDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, -1, 30));
+
+        jComboBoxRegistrarTipodeDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxRegistrarTipodeDocumentoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jComboBoxRegistrarTipodeDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 170, 50, 20));
+        jPanel1.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 190, 130, 10));
+
+        jTextRegistrarDigitesuDocumento.setBackground(new java.awt.Color(204, 204, 204));
+        jTextRegistrarDigitesuDocumento.setForeground(new java.awt.Color(0, 0, 0));
+        jTextRegistrarDigitesuDocumento.setText("Digite su documento");
+        jTextRegistrarDigitesuDocumento.setBorder(null);
+        jTextRegistrarDigitesuDocumento.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextRegistrarDigitesuDocumentoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jTextRegistrarDigitesuDocumento, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 160, 160, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -219,45 +269,65 @@ public class Registrar extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
+    private void txtPasswordRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordRegistrarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
+    }//GEN-LAST:event_txtPasswordRegistrarActionPerformed
 
-    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+    private void jTextRegistrar1nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrar1nombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField1ActionPerformed
+    }//GEN-LAST:event_jTextRegistrar1nombreActionPerformed
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTextRegistrar2nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrar2nombreActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTextRegistrar2nombreActionPerformed
 
-    private void jTextField3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField3ActionPerformed
+    private void jTextRegistrar1apellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrar1apellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField3ActionPerformed
+    }//GEN-LAST:event_jTextRegistrar1apellidoActionPerformed
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTextRegistrarSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrarSexoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextRegistrarSexoActionPerformed
 
-    private void jTextField5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField5ActionPerformed
+    private void jTextRegistrar2apellidoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrar2apellidoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField5ActionPerformed
+    }//GEN-LAST:event_jTextRegistrar2apellidoActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jComboBoxRegistrarSexoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxRegistrarSexoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jComboBoxRegistrarSexoActionPerformed
 
-    private void jTextField6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField6ActionPerformed
+    private void jTextRegistrarFechaNacimientoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrarFechaNacimientoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField6ActionPerformed
+    }//GEN-LAST:event_jTextRegistrarFechaNacimientoActionPerformed
 
-    private void txtPassword1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassword1ActionPerformed
+    private void txtPasswordRegistrarConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordRegistrarConfirmarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtPassword1ActionPerformed
+    }//GEN-LAST:event_txtPasswordRegistrarConfirmarActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextRegistrarCorreoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrarCorreoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTextRegistrarCorreoActionPerformed
+
+    private void jCheckBoxRegistrarContraseña2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxRegistrarContraseña2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxRegistrarContraseña2ActionPerformed
+
+    private void jCheckBoxRegistrarContraseña1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxRegistrarContraseña1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxRegistrarContraseña1ActionPerformed
+
+    private void jTextRegistrarTipodeDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrarTipodeDocumentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextRegistrarTipodeDocumentoActionPerformed
+
+    private void jComboBoxRegistrarTipodeDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxRegistrarTipodeDocumentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxRegistrarTipodeDocumentoActionPerformed
+
+    private void jTextRegistrarDigitesuDocumentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextRegistrarDigitesuDocumentoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextRegistrarDigitesuDocumentoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -296,9 +366,12 @@ public class Registrar extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInicioSesion;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    public javax.swing.JButton btnRegistrar;
+    public javax.swing.JCheckBox jCheckBoxRegistrarContraseña1;
+    public javax.swing.JCheckBox jCheckBoxRegistrarContraseña2;
+    public javax.swing.JComboBox<String> jComboBoxRegistrarSexo;
+    public javax.swing.JComboBox<String> jComboBoxRegistrarTipodeDocumento;
+    public com.toedter.calendar.JDateChooser jDateRegistrarFechaNacimiento;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
@@ -309,15 +382,18 @@ public class Registrar extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator7;
     private javax.swing.JSeparator jSeparator8;
-    public javax.swing.JTextField jTextField1;
-    public javax.swing.JTextField jTextField2;
-    public javax.swing.JTextField jTextField3;
-    public javax.swing.JTextField jTextField4;
-    public javax.swing.JTextField jTextField5;
-    public javax.swing.JTextField jTextField6;
-    public javax.swing.JTextField jTextField7;
-    private javax.swing.JLabel lbInicioSesion;
-    private javax.swing.JPasswordField txtPassword;
-    private javax.swing.JPasswordField txtPassword1;
+    private javax.swing.JSeparator jSeparator9;
+    public javax.swing.JTextField jTextRegistrar1apellido;
+    public javax.swing.JTextField jTextRegistrar1nombre;
+    public javax.swing.JTextField jTextRegistrar2apellido;
+    public javax.swing.JTextField jTextRegistrar2nombre;
+    public javax.swing.JTextField jTextRegistrarCorreo;
+    public javax.swing.JTextField jTextRegistrarDigitesuDocumento;
+    public javax.swing.JTextField jTextRegistrarFechaNacimiento;
+    public javax.swing.JTextField jTextRegistrarSexo;
+    public javax.swing.JTextField jTextRegistrarTipodeDocumento;
+    public javax.swing.JLabel lbRegistrar;
+    public javax.swing.JPasswordField txtPasswordRegistrar;
+    public javax.swing.JPasswordField txtPasswordRegistrarConfirmar;
     // End of variables declaration//GEN-END:variables
 }
