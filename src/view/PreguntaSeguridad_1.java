@@ -29,15 +29,15 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lbInicioSesion = new javax.swing.JLabel();
-        btnInicioSesion = new javax.swing.JButton();
+        btnPreguntaSeguridadConfirmar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
-        jTextField4 = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jTextPreguntaSeguridadSelecioneTIpo = new javax.swing.JTextField();
+        jComboBoxPreguntaSeguridadTipoPregunta = new javax.swing.JComboBox<>();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
+        jTextPreguntaSeguridadEscribaRespuesta = new javax.swing.JTextField();
         jSeparator9 = new javax.swing.JSeparator();
-        jTextField8 = new javax.swing.JTextField();
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,12 +50,12 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
         lbInicioSesion.setText("PREGUNTA DE RECUPERACIÓN");
         jPanel1.add(lbInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 100, -1, -1));
 
-        btnInicioSesion.setBackground(new java.awt.Color(0, 153, 255));
-        btnInicioSesion.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
-        btnInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicioSesion.setText("CONFIRMAR");
-        btnInicioSesion.setBorder(null);
-        jPanel1.add(btnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 170, 30));
+        btnPreguntaSeguridadConfirmar.setBackground(new java.awt.Color(0, 153, 255));
+        btnPreguntaSeguridadConfirmar.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
+        btnPreguntaSeguridadConfirmar.setForeground(new java.awt.Color(255, 255, 255));
+        btnPreguntaSeguridadConfirmar.setText("CONFIRMAR");
+        btnPreguntaSeguridadConfirmar.setBorder(null);
+        jPanel1.add(btnPreguntaSeguridadConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 320, 170, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -73,47 +73,47 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-60, 0, 290, 470));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
 
-        jTextField4.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setText("Selecione el tipo de pregunta de recuperacion que va tener su cuenta");
-        jTextField4.setBorder(null);
-        jTextField4.addActionListener(new java.awt.event.ActionListener() {
+        jTextPreguntaSeguridadSelecioneTIpo.setBackground(new java.awt.Color(204, 204, 204));
+        jTextPreguntaSeguridadSelecioneTIpo.setForeground(new java.awt.Color(0, 0, 0));
+        jTextPreguntaSeguridadSelecioneTIpo.setText("Selecione el tipo de pregunta de recuperacion que va tener su cuenta");
+        jTextPreguntaSeguridadSelecioneTIpo.setBorder(null);
+        jTextPreguntaSeguridadSelecioneTIpo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField4ActionPerformed(evt);
+                jTextPreguntaSeguridadSelecioneTIpoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, 30));
+        jPanel1.add(jTextPreguntaSeguridadSelecioneTIpo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, -1, 30));
 
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxPreguntaSeguridadTipoPregunta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jComboBoxPreguntaSeguridadTipoPreguntaActionPerformed(evt);
             }
         });
-        jPanel1.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 380, 20));
+        jPanel1.add(jComboBoxPreguntaSeguridadTipoPregunta, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 380, 20));
         jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 250, 360, 10));
 
-        jTextField7.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setText("Escriba su respuesta");
-        jTextField7.setBorder(null);
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextPreguntaSeguridadEscribaRespuesta.setBackground(new java.awt.Color(204, 204, 204));
+        jTextPreguntaSeguridadEscribaRespuesta.setForeground(new java.awt.Color(0, 0, 0));
+        jTextPreguntaSeguridadEscribaRespuesta.setText("Escriba su respuesta");
+        jTextPreguntaSeguridadEscribaRespuesta.setBorder(null);
+        jTextPreguntaSeguridadEscribaRespuesta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextPreguntaSeguridadEscribaRespuestaActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 270, 30));
+        jPanel1.add(jTextPreguntaSeguridadEscribaRespuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 220, 270, 30));
         jPanel1.add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, 360, 10));
 
-        jTextField8.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField8.setText("Escriba su respuesta otra vez");
-        jTextField8.setBorder(null);
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar.setBackground(new java.awt.Color(204, 204, 204));
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar.setForeground(new java.awt.Color(0, 0, 0));
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar.setText("Escriba su respuesta otra vez");
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar.setBorder(null);
+        jTextPreguntaSeguridadEscribaRespuestaConfirmar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTextPreguntaSeguridadEscribaRespuestaConfirmarActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 270, 30));
+        jPanel1.add(jTextPreguntaSeguridadEscribaRespuestaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 270, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -129,21 +129,21 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
+    private void jTextPreguntaSeguridadSelecioneTIpoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPreguntaSeguridadSelecioneTIpoActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField4ActionPerformed
+    }//GEN-LAST:event_jTextPreguntaSeguridadSelecioneTIpoActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jComboBoxPreguntaSeguridadTipoPreguntaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxPreguntaSeguridadTipoPreguntaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jComboBoxPreguntaSeguridadTipoPreguntaActionPerformed
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextPreguntaSeguridadEscribaRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPreguntaSeguridadEscribaRespuestaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTextPreguntaSeguridadEscribaRespuestaActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTextPreguntaSeguridadEscribaRespuestaConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextPreguntaSeguridadEscribaRespuestaConfirmarActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTextPreguntaSeguridadEscribaRespuestaConfirmarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,16 +160,16 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInicioSesion;
-    private javax.swing.JComboBox<String> jComboBox1;
+    public javax.swing.JButton btnPreguntaSeguridadConfirmar;
+    public javax.swing.JComboBox<String> jComboBoxPreguntaSeguridadTipoPregunta;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
-    public javax.swing.JTextField jTextField4;
-    public javax.swing.JTextField jTextField7;
-    public javax.swing.JTextField jTextField8;
+    public javax.swing.JTextField jTextPreguntaSeguridadEscribaRespuesta;
+    public javax.swing.JTextField jTextPreguntaSeguridadEscribaRespuestaConfirmar;
+    public javax.swing.JTextField jTextPreguntaSeguridadSelecioneTIpo;
     private javax.swing.JLabel lbInicioSesion;
     // End of variables declaration//GEN-END:variables
 }

@@ -28,12 +28,12 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         lbInicioSesion = new javax.swing.JLabel();
-        btnInicioSesion = new javax.swing.JButton();
+        btnComprobarPreguntasSeguridadConfirmar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextField7 = new javax.swing.JTextField();
-        jTextField8 = new javax.swing.JTextField();
+        jTextComprobarPreguntasSeguridadSu_pregunta_es = new javax.swing.JTextField();
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -46,12 +46,12 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
         lbInicioSesion.setText("RECUPERAR CUENTA");
         jPanel1.add(lbInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 130, -1, -1));
 
-        btnInicioSesion.setBackground(new java.awt.Color(0, 153, 255));
-        btnInicioSesion.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
-        btnInicioSesion.setForeground(new java.awt.Color(255, 255, 255));
-        btnInicioSesion.setText("CONFIRMAR");
-        btnInicioSesion.setBorder(null);
-        jPanel1.add(btnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, 30));
+        btnComprobarPreguntasSeguridadConfirmar.setBackground(new java.awt.Color(0, 153, 255));
+        btnComprobarPreguntasSeguridadConfirmar.setFont(new java.awt.Font("Dubai Medium", 0, 18)); // NOI18N
+        btnComprobarPreguntasSeguridadConfirmar.setForeground(new java.awt.Color(255, 255, 255));
+        btnComprobarPreguntasSeguridadConfirmar.setText("CONFIRMAR");
+        btnComprobarPreguntasSeguridadConfirmar.setBorder(null);
+        jPanel1.add(btnComprobarPreguntasSeguridadConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, 170, 30));
 
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
@@ -70,27 +70,27 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
         jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 360, 10));
 
-        jTextField7.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField7.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField7.setText("Su pregunat es:");
-        jTextField7.setBorder(null);
-        jTextField7.addActionListener(new java.awt.event.ActionListener() {
+        jTextComprobarPreguntasSeguridadSu_pregunta_es.setBackground(new java.awt.Color(204, 204, 204));
+        jTextComprobarPreguntasSeguridadSu_pregunta_es.setForeground(new java.awt.Color(0, 0, 0));
+        jTextComprobarPreguntasSeguridadSu_pregunta_es.setText("Su pregunat es:");
+        jTextComprobarPreguntasSeguridadSu_pregunta_es.setBorder(null);
+        jTextComprobarPreguntasSeguridadSu_pregunta_es.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField7ActionPerformed(evt);
+                jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 360, 30));
+        jPanel1.add(jTextComprobarPreguntasSeguridadSu_pregunta_es, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 360, 30));
 
-        jTextField8.setBackground(new java.awt.Color(204, 204, 204));
-        jTextField8.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField8.setText("Escriba su respuesta");
-        jTextField8.setBorder(null);
-        jTextField8.addActionListener(new java.awt.event.ActionListener() {
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta.setBackground(new java.awt.Color(204, 204, 204));
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta.setForeground(new java.awt.Color(0, 0, 0));
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta.setText("Escriba su respuesta");
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta.setBorder(null);
+        jTextComprobarPreguntaSeguridadEscribasuRespuesta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField8ActionPerformed(evt);
+                jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 360, 30));
+        jPanel1.add(jTextComprobarPreguntaSeguridadEscribasuRespuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 360, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -106,13 +106,13 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField7ActionPerformed
+    private void jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField7ActionPerformed
+    }//GEN-LAST:event_jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed
 
-    private void jTextField8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField8ActionPerformed
+    private void jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField8ActionPerformed
+    }//GEN-LAST:event_jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -165,13 +165,13 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JButton btnInicioSesion;
+    public javax.swing.JButton btnComprobarPreguntasSeguridadConfirmar;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator8;
-    public javax.swing.JTextField jTextField7;
-    public javax.swing.JTextField jTextField8;
+    public javax.swing.JTextField jTextComprobarPreguntaSeguridadEscribasuRespuesta;
+    public javax.swing.JTextField jTextComprobarPreguntasSeguridadSu_pregunta_es;
     private javax.swing.JLabel lbInicioSesion;
     // End of variables declaration//GEN-END:variables
 }

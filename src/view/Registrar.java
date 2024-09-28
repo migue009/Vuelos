@@ -209,7 +209,7 @@ public class Registrar extends javax.swing.JFrame {
                 jTextRegistrarCorreoActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextRegistrarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 260, 160, 30));
+        jPanel1.add(jTextRegistrarCorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 270, 160, 30));
 
         jCheckBoxRegistrarContraseña2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
