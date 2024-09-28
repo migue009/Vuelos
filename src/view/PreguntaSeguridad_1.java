@@ -38,6 +38,7 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
         jTextPreguntaSeguridadEscribaRespuesta = new javax.swing.JTextField();
         jSeparator9 = new javax.swing.JSeparator();
         jTextPreguntaSeguridadEscribaRespuestaConfirmar = new javax.swing.JTextField();
+        lbPreguntaSeguridadSeleccioneTipoPregunta = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -75,7 +76,6 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
 
         jTextPreguntaSeguridadSelecioneTIpo.setBackground(new java.awt.Color(204, 204, 204));
         jTextPreguntaSeguridadSelecioneTIpo.setForeground(new java.awt.Color(0, 0, 0));
-        jTextPreguntaSeguridadSelecioneTIpo.setText("Selecione el tipo de pregunta de recuperacion que va tener su cuenta");
         jTextPreguntaSeguridadSelecioneTIpo.setBorder(null);
         jTextPreguntaSeguridadSelecioneTIpo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -114,6 +114,10 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextPreguntaSeguridadEscribaRespuestaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 260, 270, 30));
+
+        lbPreguntaSeguridadSeleccioneTipoPregunta.setForeground(new java.awt.Color(0, 0, 0));
+        lbPreguntaSeguridadSeleccioneTipoPregunta.setText("Selecione el tipo de pregunta de recuperacion que va tener su cuenta");
+        jPanel1.add(lbPreguntaSeguridadSeleccioneTipoPregunta, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, 380, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -171,5 +175,6 @@ public class PreguntaSeguridad_1 extends javax.swing.JFrame {
     public javax.swing.JTextField jTextPreguntaSeguridadEscribaRespuestaConfirmar;
     public javax.swing.JTextField jTextPreguntaSeguridadSelecioneTIpo;
     private javax.swing.JLabel lbInicioSesion;
+    public javax.swing.JLabel lbPreguntaSeguridadSeleccioneTipoPregunta;
     // End of variables declaration//GEN-END:variables
 }

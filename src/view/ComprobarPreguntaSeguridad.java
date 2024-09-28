@@ -32,8 +32,8 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator3 = new javax.swing.JSeparator();
         jSeparator8 = new javax.swing.JSeparator();
-        jTextComprobarPreguntasSeguridadSu_pregunta_es = new javax.swing.JTextField();
         jTextComprobarPreguntaSeguridadEscribasuRespuesta = new javax.swing.JTextField();
+        lbComprobarPreguntaSeguridadSuPreguntaEs = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -70,17 +70,6 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
         jPanel1.add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 360, 10));
 
-        jTextComprobarPreguntasSeguridadSu_pregunta_es.setBackground(new java.awt.Color(204, 204, 204));
-        jTextComprobarPreguntasSeguridadSu_pregunta_es.setForeground(new java.awt.Color(0, 0, 0));
-        jTextComprobarPreguntasSeguridadSu_pregunta_es.setText("Su pregunat es:");
-        jTextComprobarPreguntasSeguridadSu_pregunta_es.setBorder(null);
-        jTextComprobarPreguntasSeguridadSu_pregunta_es.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed(evt);
-            }
-        });
-        jPanel1.add(jTextComprobarPreguntasSeguridadSu_pregunta_es, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 170, 360, 30));
-
         jTextComprobarPreguntaSeguridadEscribasuRespuesta.setBackground(new java.awt.Color(204, 204, 204));
         jTextComprobarPreguntaSeguridadEscribasuRespuesta.setForeground(new java.awt.Color(0, 0, 0));
         jTextComprobarPreguntaSeguridadEscribasuRespuesta.setText("Escriba su respuesta");
@@ -91,6 +80,10 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jTextComprobarPreguntaSeguridadEscribasuRespuesta, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 200, 360, 30));
+
+        lbComprobarPreguntaSeguridadSuPreguntaEs.setForeground(new java.awt.Color(0, 0, 0));
+        lbComprobarPreguntaSeguridadSuPreguntaEs.setText("Su pregunta es:");
+        jPanel1.add(lbComprobarPreguntaSeguridadSuPreguntaEs, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 180, 190, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -105,10 +98,6 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextComprobarPreguntasSeguridadSu_pregunta_esActionPerformed
 
     private void jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextComprobarPreguntaSeguridadEscribasuRespuestaActionPerformed
         // TODO add your handling code here:
@@ -171,7 +160,7 @@ public class ComprobarPreguntaSeguridad extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator8;
     public javax.swing.JTextField jTextComprobarPreguntaSeguridadEscribasuRespuesta;
-    public javax.swing.JTextField jTextComprobarPreguntasSeguridadSu_pregunta_es;
+    public javax.swing.JLabel lbComprobarPreguntaSeguridadSuPreguntaEs;
     private javax.swing.JLabel lbInicioSesion;
     // End of variables declaration//GEN-END:variables
 }

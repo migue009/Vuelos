@@ -29,7 +29,6 @@ public class Login extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lbInicioSesion = new javax.swing.JLabel();
         btnInicioSesion = new javax.swing.JButton();
-        txtPassword = new javax.swing.JPasswordField();
         jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
@@ -37,6 +36,8 @@ public class Login extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
+        jTextLoginContraseña = new javax.swing.JTextField();
+        jCheckBoxLoginContraseña = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -55,19 +56,6 @@ public class Login extends javax.swing.JFrame {
         btnInicioSesion.setText("Ingresar");
         btnInicioSesion.setBorder(null);
         jPanel1.add(btnInicioSesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 270, 90, 30));
-
-        txtPassword.setBackground(new java.awt.Color(204, 204, 204));
-        txtPassword.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
-        txtPassword.setForeground(new java.awt.Color(0, 0, 0));
-        txtPassword.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtPassword.setText("Contraseña");
-        txtPassword.setBorder(null);
-        txtPassword.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtPassword, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 181, 20));
 
         jTextField1.setBackground(new java.awt.Color(204, 204, 204));
         jTextField1.setForeground(new java.awt.Color(0, 0, 0));
@@ -119,6 +107,20 @@ public class Login extends javax.swing.JFrame {
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 260, 10));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 200, 260, 10));
 
+        jTextLoginContraseña.setBackground(new java.awt.Color(204, 204, 204));
+        jTextLoginContraseña.setFont(new java.awt.Font("Bookshelf Symbol 7", 0, 12)); // NOI18N
+        jTextLoginContraseña.setForeground(new java.awt.Color(0, 0, 0));
+        jTextLoginContraseña.setText("Contraseña");
+        jTextLoginContraseña.setBorder(null);
+        jPanel1.add(jTextLoginContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 230, 190, -1));
+
+        jCheckBoxLoginContraseña.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBoxLoginContraseñaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jCheckBoxLoginContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 230, -1, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -137,13 +139,13 @@ public class Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void txtPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordActionPerformed
-
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jCheckBoxLoginContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxLoginContraseñaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jCheckBoxLoginContraseñaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -184,13 +186,14 @@ public class Login extends javax.swing.JFrame {
     public javax.swing.JButton btnInicioSesion;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
+    public javax.swing.JCheckBox jCheckBoxLoginContraseña;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     public javax.swing.JTextField jTextField1;
+    public javax.swing.JTextField jTextLoginContraseña;
     private javax.swing.JLabel lbInicioSesion;
-    private javax.swing.JPasswordField txtPassword;
     // End of variables declaration//GEN-END:variables
 }

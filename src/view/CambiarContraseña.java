@@ -29,14 +29,14 @@ public class CambiarContraseña extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         lbRegistrar = new javax.swing.JLabel();
         btnCambiarContraseñaConfirmar = new javax.swing.JButton();
-        txtPasswordCambiarContraseñaConfirmar = new javax.swing.JPasswordField();
         jPanel2 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator3 = new javax.swing.JSeparator();
-        txtPasswordCambiarContraseñaConfirmar2 = new javax.swing.JPasswordField();
         jSeparator7 = new javax.swing.JSeparator();
         jCheckBoxCambiarContraseña2 = new javax.swing.JCheckBox();
         jCheckBoxCambiarContraseña1 = new javax.swing.JCheckBox();
+        jTextCambiarContraseñaConfirmar2 = new javax.swing.JTextField();
+        jTextCambiarContraseñaConfirmar1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -56,19 +56,6 @@ public class CambiarContraseña extends javax.swing.JFrame {
         btnCambiarContraseñaConfirmar.setBorder(null);
         jPanel1.add(btnCambiarContraseñaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 270, 170, 30));
 
-        txtPasswordCambiarContraseñaConfirmar.setBackground(new java.awt.Color(204, 204, 204));
-        txtPasswordCambiarContraseñaConfirmar.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
-        txtPasswordCambiarContraseñaConfirmar.setForeground(new java.awt.Color(0, 0, 0));
-        txtPasswordCambiarContraseñaConfirmar.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtPasswordCambiarContraseñaConfirmar.setText("Contraseña");
-        txtPasswordCambiarContraseñaConfirmar.setBorder(null);
-        txtPasswordCambiarContraseñaConfirmar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordCambiarContraseñaConfirmarActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtPasswordCambiarContraseñaConfirmar, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 181, 20));
-
         jPanel2.setBackground(new java.awt.Color(0, 153, 255));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -85,19 +72,6 @@ public class CambiarContraseña extends javax.swing.JFrame {
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 290, 470));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 210, 190, 10));
         jPanel1.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 40, -1, 360));
-
-        txtPasswordCambiarContraseñaConfirmar2.setBackground(new java.awt.Color(204, 204, 204));
-        txtPasswordCambiarContraseñaConfirmar2.setFont(new java.awt.Font("Dubai", 0, 18)); // NOI18N
-        txtPasswordCambiarContraseñaConfirmar2.setForeground(new java.awt.Color(0, 0, 0));
-        txtPasswordCambiarContraseñaConfirmar2.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        txtPasswordCambiarContraseñaConfirmar2.setText("Contraseña");
-        txtPasswordCambiarContraseñaConfirmar2.setBorder(null);
-        txtPasswordCambiarContraseñaConfirmar2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPasswordCambiarContraseñaConfirmar2ActionPerformed(evt);
-            }
-        });
-        jPanel1.add(txtPasswordCambiarContraseñaConfirmar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 181, 20));
         jPanel1.add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 240, 190, 10));
 
         jCheckBoxCambiarContraseña2.addActionListener(new java.awt.event.ActionListener() {
@@ -114,6 +88,20 @@ public class CambiarContraseña extends javax.swing.JFrame {
         });
         jPanel1.add(jCheckBoxCambiarContraseña1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, -1, -1));
 
+        jTextCambiarContraseñaConfirmar2.setBackground(new java.awt.Color(204, 204, 204));
+        jTextCambiarContraseñaConfirmar2.setFont(new java.awt.Font("Bookshelf Symbol 7", 0, 12)); // NOI18N
+        jTextCambiarContraseñaConfirmar2.setForeground(new java.awt.Color(0, 0, 0));
+        jTextCambiarContraseñaConfirmar2.setText("Contraseña");
+        jTextCambiarContraseñaConfirmar2.setBorder(null);
+        jPanel1.add(jTextCambiarContraseñaConfirmar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 220, 190, -1));
+
+        jTextCambiarContraseñaConfirmar1.setBackground(new java.awt.Color(204, 204, 204));
+        jTextCambiarContraseñaConfirmar1.setFont(new java.awt.Font("Bookshelf Symbol 7", 0, 12)); // NOI18N
+        jTextCambiarContraseñaConfirmar1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextCambiarContraseñaConfirmar1.setText("Contraseña");
+        jTextCambiarContraseñaConfirmar1.setBorder(null);
+        jPanel1.add(jTextCambiarContraseñaConfirmar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 190, 190, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -127,14 +115,6 @@ public class CambiarContraseña extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void txtPasswordCambiarContraseñaConfirmarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordCambiarContraseñaConfirmarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordCambiarContraseñaConfirmarActionPerformed
-
-    private void txtPasswordCambiarContraseñaConfirmar2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPasswordCambiarContraseñaConfirmar2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPasswordCambiarContraseñaConfirmar2ActionPerformed
 
     private void jCheckBoxCambiarContraseña2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBoxCambiarContraseña2ActionPerformed
         // TODO add your handling code here:
@@ -191,8 +171,8 @@ public class CambiarContraseña extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator7;
+    public javax.swing.JTextField jTextCambiarContraseñaConfirmar1;
+    public javax.swing.JTextField jTextCambiarContraseñaConfirmar2;
     public javax.swing.JLabel lbRegistrar;
-    public javax.swing.JPasswordField txtPasswordCambiarContraseñaConfirmar;
-    public javax.swing.JPasswordField txtPasswordCambiarContraseñaConfirmar2;
     // End of variables declaration//GEN-END:variables
 }
